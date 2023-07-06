@@ -8,11 +8,10 @@ function App() {
   const [text, setText] = useState("");
   const dispatch = useDispatch()
 
-  const addTask = () => dispatch(addTodo(text))
-
-  const removeTodo = (todoId) => {
-    // setTodos(todos.filter(todo => todo.id !== todoId));
-  };
+  const addTask = () => {
+    dispatch(addTodo({text}))
+    setText('')
+  }
 
   const toggleTodoComplete = (todoId) => {
     // setTodos(
@@ -38,10 +37,7 @@ function App() {
       </header>
       <div className="add_todo_block">
         <InputField text={text} handleInput={setText} handleSubmit={addTask} />
-        <TodoList
-          toggleTodoComplete={toggleTodoComplete}
-          removeTodo={removeTodo}
-        />
+        <TodoList />
       </div>
     </div>
   );
