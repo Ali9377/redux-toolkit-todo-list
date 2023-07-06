@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background-color: #1e1e1e;
+  text-align: center;
+}
+
+header {
+  img {
+    margin-top: 55px;
+  }
+}
+
+.add_todo_block {
+  margin-top: 80px;
+
+  form {
+    button {
+      border: 0;
+      font-size: 25px;
+      font-weight: 400;
+      font-family: Racing Sans One;
+      border-radius: 20px;
+      margin-left: -25px;
+      padding: 5px;
+      background-color: #4f4f4f;
+      color: #ffffff;
+    }
+    input {
+      width: 620px;
+      font-size: 25px;
+      padding: 7px 20px;
+      border: 0;
+      border-radius: 15px;
+      background-color: #d9d9d9;
+      outline: none;
+    }
+  }
+
+  ul {
+    color: #fff;
+    list-style: none;
+    font-size: 26px;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      gap: 0.5rem
+    }
+
+    .delete-btn {
+      color: red;
+      cursor: pointer;
+    }
+
+    span {
+      padding-right: 40px;
+      padding-left: 10px;
+    }
+
+    .active {
+      text-decoration: line-through;
+    }
+  }
+}
