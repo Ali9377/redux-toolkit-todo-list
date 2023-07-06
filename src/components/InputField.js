@@ -1,4 +1,4 @@
-export const InputField = ({text, handleInput, handleSubmit}) => {
+export const InputField = ({ text, handleInput, handleSubmit }) => {
   return (
     <form
       onSubmit={(e) => {

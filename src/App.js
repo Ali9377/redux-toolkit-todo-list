@@ -6,25 +6,11 @@ import { addTodo } from "./store/TodoSlice";
 
 function App() {
   const [text, setText] = useState("");
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   const addTask = () => {
-    dispatch(addTodo({text}))
-    setText('')
-  }
-
-  const toggleTodoComplete = (todoId) => {
-    // setTodos(
-    //   todos.map(
-    //     todo => {
-    //     if (todo.id !== todoId) return todo;
-
-    //     return {
-    //       ...todo,
-    //       completed: !todo.completed,
-    //     };
-    //   })
-    // );
+    dispatch(addTodo({ text }));
+    setText("");
   };
 
   return (
